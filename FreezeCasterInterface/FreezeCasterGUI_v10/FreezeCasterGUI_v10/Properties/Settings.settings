@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FreezeCasterGUI_v10.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MaxTemperature" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">330</Value>
+    </Setting>
+    <Setting Name="PIDPeltierPSUPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PIDPeltierReadingsPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="PIDPeltierMaxVoltage" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">27.5</Value>
+    </Setting>
+    <Setting Name="PIDPeltierMaxCurrent" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">14.5</Value>
+    </Setting>
+    <Setting Name="IsoTechPSUDefaultTrackMode" Type="EFMExperimentsLibrary.AbstractPSUTrackingMode" Scope="User">
+      <Value Profile="(Default)">Parallel</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

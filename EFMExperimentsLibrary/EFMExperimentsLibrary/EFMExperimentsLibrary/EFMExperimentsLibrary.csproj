@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A250675-2271-41D5-979D-0A6C3060291C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFMExperimentsLibrary</RootNamespace>
+    <AssemblyName>EFMExperimentsLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ivi.Visa, Version=5.8.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\IVI Foundation\VISA\Microsoft.NET\Framework64\v2.0.50727\VISA.NET Shared Components 5.11.0\Ivi.Visa.dll</HintPath>
+    </Reference>
+    <Reference Include="Keithley.IVI.NET2.KE2700, Version=2.0.8.612, Culture=neutral, PublicKeyToken=78636b9127ce1f63, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\IVI Foundation\IVI\Drivers\KE2700\Keithley.IVI.NET2.KE2700.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Visa, Version=19.0.0.49152, Culture=neutral, PublicKeyToken=2eaa5af0834e221d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\IVI Foundation\VISA\Microsoft.NET\Framework64\v4.0.30319\NI VISA.NET 19.0\NationalInstruments.Visa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zaber.Serial.Core">
+      <HintPath>Instrument\Zaber.Serial.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Instrument\DataFilter\DataFilterSettings.cs" />
+    <Compile Include="Instrument\DataFilter\DataFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\DataFilter\DataFilter.Designer.cs">
+      <DependentUpon>DataFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrument\DataFilter\SerializeData.cs" />
+    <Compile Include="Instrument\Data\DSCDataSaver.cs" />
+    <Compile Include="Instrument\Data\HallprobeDataSaver.cs" />
+    <Compile Include="Instrument\Data\OutputFileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\Data\OutputFileControl.Designer.cs">
+      <DependentUpon>OutputFileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrument\ExperimentFlow\ExperimentController.cs" />
+    <Compile Include="Instrument\ExperimentFlow\ExperimentFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\ExperimentFlow\ExperimentFlow.Designer.cs">
+      <DependentUpon>ExperimentFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrument\Instrument.cs" />
+    <Compile Include="Instrument\InstrumentDataSaver.cs" />
+    <Compile Include="Instrument\InstrumentDataset.cs" />
+    <Compile Include="Instrument\InstrumentSettings.cs" />
+    <Compile Include="Instrument\InstrumentTemperatureWatch.cs" />
+    <Compile Include="Instrument\Keithley2700\KE2700Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\Keithley2700\KE2700Control.Designer.cs" />
+    <Compile Include="Instrument\Keithley2700\Keithley2700DataSaver.cs" />
+    <Compile Include="Instrument\Keithley2700\Keithley2700Instrument.cs" />
+    <Compile Include="Instrument\Keithley2700\Keithley2700Dataset.cs" />
+    <Compile Include="Instrument\Keithley2700\Keithley2700Settings.cs" />
+    <Compile Include="Instrument\Keithley2700\KeithleySetupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\Keithley2700\KeithleySetupControl.Designer.cs" />
+    <Compile Include="Instrument\MagnetDrive\MagnetDriveDriver.cs" />
+    <Compile Include="Instrument\MagnetDrive\MagnetDriveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\MagnetDrive\MagnetDriveControl.Designer.cs">
+      <DependentUpon>MagnetDriveControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrument\MagnetDrive\MagnetDriveSettings.cs" />
+    <Compile Include="Instrument\Plot\GraphXYPlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\Plot\GraphXYPlot.Designer.cs">
+      <DependentUpon>GraphXYPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrument\PSU\CPX400SPPSUDriverSerial.cs" />
+    <Compile Include="Instrument\PSU\CPX400SPPSUDriver.cs" />
+    <Compile Include="Instrument\PSU\InstekPSHPSUDriver.cs" />
+    <Compile Include="Instrument\PSU\PSUInstrument.cs" />
+    <Compile Include="Instrument\PicoTc08\PicoTc08Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\PicoTc08\PicoTc08Control.Designer.cs" />
+    <Compile Include="Instrument\PicoTc08\PicoTc08DataSaver.cs" />
+    <Compile Include="Instrument\PicoTc08\PicoTC08Instrument.cs" />
+    <Compile Include="Instrument\PicoTc08\PicoTC08InstrumentDataset.cs" />
+    <Compile Include="Instrument\PicoTc08\PicoTC08Settings.cs" />
+    <Compile Include="Instrument\PSU\PSUInterface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\PSU\PSUInterface.Designer.cs">
+      <DependentUpon>PSUInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrument\Stability\PeltierStability.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\Stability\PeltierStability.Designer.cs">
+      <DependentUpon>PeltierStability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrument\TemperatureRamp\TemperatureProfileFunction.cs" />
+    <Compile Include="Instrument\TemperatureRamp\ProfileController.cs" />
+    <Compile Include="Instrument\TemperatureRamp\TemperatureProfileFunctionExponential.cs" />
+    <Compile Include="Instrument\TemperatureRamp\TemperatureProfileFunctionPoly2.cs" />
+    <Compile Include="Instrument\TemperatureRamp\TemperatureProfiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\TemperatureRamp\TemperatureProfiles.Designer.cs">
+      <DependentUpon>TemperatureProfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrument\TemperatureRamp\TemperatureRampControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\TemperatureRamp\TemperatureRampControl.Designer.cs">
+      <DependentUpon>TemperatureRampControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrument\TemperatureWatch\TemperatureWatch.cs" />
+    <Compile Include="Instrument\Utilities\MathFunctions.cs" />
+    <Compile Include="Instrument\ZaberXYZControl\XYZControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\ZaberXYZControl\XYZControl.Designer.cs" />
+    <Compile Include="Instrument\ZaberXYZControl\XYZStagev2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\ZaberXYZControl\XYZStagev2.Designer.cs">
+      <DependentUpon>XYZStagev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MHMData\HallprobeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MHMData\HallprobeControl.Designer.cs">
+      <DependentUpon>HallprobeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MHMData\HallProbeInstrument.cs" />
+    <Compile Include="MHMData\MHMHallprobe.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Instrument\PSU\AbstractPSUDriver.cs" />
+    <Compile Include="Instrument\PSU\IsoTech3303PSUDriver.cs" />
+    <Compile Include="Instrument\PID\PIDControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\PID\PIDControl.Designer.cs" />
+    <Compile Include="Instrument\PSU\PSUDataset.cs" />
+    <Compile Include="Instrument\PSU\PSUSettings.cs" />
+    <Compile Include="Instrument\USBRelay\USBRelayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instrument\USBRelay\USBRelayControl.Designer.cs" />
+    <Compile Include="Instrument\USBRelay\USBRelayDriver.cs" />
+    <Compile Include="Instrument\PicoTc08\USBTC08Imports.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Instrument\DataFilter\DataFilter.resx">
+      <DependentUpon>DataFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrument\Data\OutputFileControl.resx">
+      <DependentUpon>OutputFileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrument\ExperimentFlow\ExperimentFlow.resx">
+      <DependentUpon>ExperimentFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrument\Keithley2700\KE2700Control.resx" />
+    <EmbeddedResource Include="Instrument\Keithley2700\KeithleySetupControl.resx" />
+    <EmbeddedResource Include="Instrument\MagnetDrive\MagnetDriveControl.resx">
+      <DependentUpon>MagnetDriveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrument\PicoTc08\PicoTc08Control.resx" />
+    <EmbeddedResource Include="Instrument\PID\PIDControl.resx" />
+    <EmbeddedResource Include="Instrument\Plot\GraphXYPlot.resx">
+      <DependentUpon>GraphXYPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrument\PSU\PSUInterface.resx">
+      <DependentUpon>PSUInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrument\Stability\PeltierStability.resx">
+      <DependentUpon>PeltierStability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrument\TemperatureRamp\TemperatureProfiles.resx">
+      <DependentUpon>TemperatureProfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrument\TemperatureRamp\TemperatureRampControl.resx">
+      <DependentUpon>TemperatureRampControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrument\USBRelay\USBRelayControl.resx" />
+    <EmbeddedResource Include="Instrument\ZaberXYZControl\XYZControl.resx" />
+    <EmbeddedResource Include="Instrument\ZaberXYZControl\XYZStagev2.resx">
+      <DependentUpon>XYZStagev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MHMData\HallprobeControl.resx">
+      <DependentUpon>HallprobeControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

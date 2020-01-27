@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <GraphData>
+    <Enabled>true</Enabled>
+    <Initialized>true</Initialized>
+    <SeriesName>Bx</SeriesName>
+    <SeriesNumber>0</SeriesNumber>
+  </GraphData>
+  <GraphData>
+    <Enabled>true</Enabled>
+    <Initialized>true</Initialized>
+    <SeriesName>By</SeriesName>
+    <SeriesNumber>1</SeriesNumber>
+  </GraphData>
+  <GraphData>
+    <Enabled>true</Enabled>
+    <Initialized>true</Initialized>
+    <SeriesName>Bz</SeriesName>
+    <SeriesNumber>2</SeriesNumber>
+  </GraphData>
+  <GraphData>
+    <Enabled>true</Enabled>
+    <Initialized>true</Initialized>
+    <SeriesName>Bnorm</SeriesName>
+    <SeriesNumber>3</SeriesNumber>
+  </GraphData>
+</DocumentElement>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<DataFilterSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <names>
+    <anyType xsi:type="xsd:string">HHP-NP699</anyType>
+    <anyType xsi:type="xsd:string" />
+    <anyType xsi:type="xsd:string" />
+    <anyType xsi:type="xsd:string" />
+    <anyType xsi:type="xsd:string" />
+    <anyType xsi:type="xsd:string" />
+    <anyType xsi:type="xsd:string" />
+    <anyType xsi:type="xsd:string" />
+    <anyType xsi:type="xsd:string" />
+    <anyType xsi:type="xsd:string" />
+  </names>
+  <K1_vals>
+    <anyType xsi:type="xsd:double">0.1438</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+  </K1_vals>
+  <K2_vals>
+    <anyType xsi:type="xsd:double">5.8E-05</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+  </K2_vals>
+  <K3_vals>
+    <anyType xsi:type="xsd:double">0.02</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+    <anyType xsi:type="xsd:double">0</anyType>
+  </K3_vals>
+  <channelID>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+  </channelID>
+  <transformation>
+    <anyType xsi:type="xsd:int">2</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+  </transformation>
+  <channelA>
+    <anyType xsi:type="xsd:int">17</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+  </channelA>
+  <channelB>
+    <anyType xsi:type="xsd:int">20</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+    <anyType xsi:type="xsd:int">0</anyType>
+  </channelB>
+</DataFilterSettings>

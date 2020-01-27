@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicSerialWriteRead", "BasicSerialWriteRead.csproj", "{FD09182F-CCE8-4DD1-B602-8733685CBBA4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FD09182F-CCE8-4DD1-B602-8733685CBBA4}.Debug.ActiveCfg = Debug|.NET
+		{FD09182F-CCE8-4DD1-B602-8733685CBBA4}.Debug.Build.0 = Debug|.NET
+		{FD09182F-CCE8-4DD1-B602-8733685CBBA4}.Release.ActiveCfg = Release|.NET
+		{FD09182F-CCE8-4DD1-B602-8733685CBBA4}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <OutputFilenames>
+    <OutputDir>C:\axis3-scanner\data\</OutputDir>
+    <OutputFile>test</OutputFile>
+  </OutputFilenames>
+</DocumentElement>

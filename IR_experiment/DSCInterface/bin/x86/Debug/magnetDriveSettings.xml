@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<MagnetDriveSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <gearRatio>3.35</gearRatio>
+  <nLines>1633</nLines>
+  <slowLoopTime>0.0008</slowLoopTime>
+  <setupFile>C:/IR_experiment/MagnetMotor.t.zip</setupFile>
+  <comPort>COM3</comPort>
+  <baudRate>9600</baudRate>
+  <axisID>1</axisID>
+  <rampRate>2</rampRate>
+  <indexHP1>22</indexHP1>
+  <indexHP2>23</indexHP2>
+</MagnetDriveSettings>
